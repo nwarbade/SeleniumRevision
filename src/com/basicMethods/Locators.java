@@ -17,9 +17,9 @@ public static void main(String[] args) {
 		
 //		id locator
 		
-//		WebElement searchbox = driver.findElement(By.id("twotabsearchtextbox"));
+		WebElement searchbox = driver.findElement(By.id("twotabsearchtextbox"));
 //		
-//		searchbox.sendKeys("Mobile");
+		searchbox.sendKeys("Mobile");
 		
 //		class locator
 		
@@ -29,9 +29,9 @@ public static void main(String[] args) {
 		
 //	linkText
 	
-	WebElement seemorelink= driver.findElement(By.linkText("See more"));
+	//WebElement seemorelink= driver.findElement(By.linkText("See more"));
 	
-	seemorelink.click();
+	//seemorelink.click();
 
 }
 }
