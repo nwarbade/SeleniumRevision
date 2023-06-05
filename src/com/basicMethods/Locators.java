@@ -15,23 +15,28 @@ public static void main(String[] args) {
 		
 		driver.get("https://amazon.in");
 		
-//		id locator
+//		1: id locator
 		
 		WebElement searchbox = driver.findElement(By.id("twotabsearchtextbox"));
 //		
 		searchbox.sendKeys("Mobile");
 		
-//		class locator
+//		2: class locator
 		
 //	WebElement searchbutton	= driver.findElement(By.className("nav-line-1"));
 //		
 //	searchbutton.click();
 		
-//	linkText
+//		3: linkText
 	
 	//WebElement seemorelink= driver.findElement(By.linkText("See more"));
 	
 	//seemorelink.click();
+		
+//		4: partiallinktext
+		
+		driver.findElement(By.partialLinkText("all offers")).click();
+		
 
 }
 }
