@@ -12,8 +12,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
 	
-		
-	
 		public static void main(String[] args) throws IOException {
 		
 		
@@ -31,7 +29,7 @@ public class ExcelReader {
 		
 		DataFormatter df = new DataFormatter();
 		
-		String datavalue = df.formatCellValue(sh1.getRow(7).getCell(0));
+		String datavalue = df.formatCellValue(sh1.getRow(4).getCell(0));
 		
 		System.out.println(datavalue);
 		

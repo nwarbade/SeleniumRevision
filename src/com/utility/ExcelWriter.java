@@ -27,7 +27,9 @@ public static void main(String[] args) throws IOException {
 		
 		FileOutputStream fos = new FileOutputStream(fout);
 		
-		sh1.getRow(3).getCell(0).setCellValue("writingtest");
+		sh1.getRow(4).getCell(0).setCellValue("writingtest");
+		
+		wb.write(fos);
 		
 		 
 
