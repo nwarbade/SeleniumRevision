@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
     <classes>
-      <class name="testngdiscussion.DependsOnMethod">
+      <class name="testngdiscussion.ExecutingTestCaseOnChromeAndFirefox">
         <methods>
-          <include name="login"/>
-          <include name="home"/>
-          <include name="logout"/>
-          <include name="profile"/>
+          <include name="searchProduct" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testngdiscussion.DependsOnMethod -->
+      </class> <!-- testngdiscussion.ExecutingTestCaseOnChromeAndFirefox -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
